@@ -1,0 +1,39 @@
+[
+    {
+        "actor": "Jenkins-ONSDigital",
+        "data": {
+            "hook_id": 131812491,
+            "events": []
+        },
+        "org": "ONSdigital",
+        "repo": "ONSdigital/sbr-api-sys-test",
+        "created_at": 1565824180543,
+        "action": "hook.destroy"
+    },
+    {
+        "actors": "Jenkins-ONSDigital",
+        "data": {
+            "hook_id": 131814642,
+            "events": [
+                "pull_request",
+                "push",
+                "repository"
+            ]
+        },
+        "org": "ONSdigital",
+        "repo": "ONSdigital/sbr-api-sys-test",
+        "created_at": 1565824180768,
+        "action": "hook.create"
+    },
+    {
+        "actor": "Jenkins-ONSDigital",
+        "data": {
+            "hook_id": 131812521,
+            "events": []
+        },
+        "org": "ONSdigital",
+        "repo": "ONSdigital/sbr-idbr-data-load",
+        "created_at": 1565824190811,
+        "action": "hook.destroy"
+    }
+]

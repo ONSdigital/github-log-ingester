@@ -1,0 +1,54 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 2em 2em;
+  }
+  
+  a:link {
+    color: blue;
+  }
+  
+  a:visited {
+    color: blue;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  a:active {
+    color: blue;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 240%;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 140%;
+  }
+  
+  h2 span {
+    font-size: 70%;
+    font-weight: normal;
+  }
+  
+  input {
+    font-size: 100%;
+  }
+
+  .notice {
+    background-color: #999;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 8px 5px;
+  }
