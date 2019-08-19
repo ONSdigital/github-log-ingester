@@ -9,5 +9,8 @@ This repository contains a Ruby [Sinatra](http://sinatrarb.com/) application tha
 ## Running
 To run the application use `bundle exec rackup` and access using [http://localhost:9292](http://localhost:9292)
 
+## Docker
+Build using `docker build -t github-log-ingester .` and run using `docker run --rm --name github-log-ingester -d -p 80:3000 github-log-ingester`
+
 ## Copyright
 Copyright (C) 2019 Crown Copyright (Office for National Statistics)
