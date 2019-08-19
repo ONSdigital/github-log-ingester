@@ -4,5 +4,9 @@ WORKDIR /usr/src/app
 COPY . ./
 RUN gem install bundler --no-document && bundle install
 
-USER 1000
-CMD ["puma", "config.ru", "-C", "puma.rb"]
+RUN addgroup --gid 1000 sinatra && \
+    adduser --system --no-create-home --uid 1000 --gid 1000 sinatra && \
+    chown -R sinatra:sinatra ./
+USER sinatra
+
+CMD ["bundle", "exec", "puma", "config.ru", "-C", "puma.rb"]
