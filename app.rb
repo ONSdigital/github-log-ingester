@@ -43,8 +43,8 @@ post '/upload' do
   line_num = 0
   lines.each do |line|
     line_num += 1
-    unless line['actor']
-      flash[:notice] = "File isn't a valid GitHub audit log export (missing 'actor' key on line #{line_num})."
+    unless line['org']
+      flash[:notice] = "File isn't a valid GitHub audit log export (missing 'org' key on line #{line_num})."
       redirect '/'
     end
 
