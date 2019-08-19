@@ -1,8 +1,8 @@
 FROM ruby:2.5
 
 WORKDIR /usr/src/app
-COPY Gemfile Gemfile.lock ./
-COPY app.rb config.ru ./
+COPY . ./
 RUN gem install bundler --no-document && bundle install
 
-CMD ["bundle", "exec", "rackup"]
+USER 1000
+CMD ["puma", "config.ru", "-C", "puma.rb"]
