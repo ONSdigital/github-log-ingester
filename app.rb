@@ -8,6 +8,9 @@ require 'sinatra/flash'
 TEN_MINUTES = 60 * 10
 use Rack::Session::Pool, expire_after: TEN_MINUTES
 
+# Turn off request logging
+set :logging, false
+
 before do
   headers 'Content-Type' => 'text/html; charset=utf-8'
 end
