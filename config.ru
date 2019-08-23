@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+#\ --quiet
+
 require_relative 'app.rb'
 
 use Rack::ETag
